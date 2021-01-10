@@ -1,7 +1,7 @@
 package com.example.RankIT.demo;
 
 import com.example.RankIT.demo.entities.Club;
-import com.example.RankIT.ClubRepository;
+import com.example.RankIT.demo.repositories.ClubRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.stream.Stream;
 
 @SpringBootApplication
-public class RankItApplication {
+public class RankItApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		SpringApplication.run(RankItApplication.class, args);
@@ -26,5 +26,10 @@ public class RankItApplication {
 			});
 			clubRepository.findAll().forEach(System.out::println);
 		};
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+
 	}
 }
