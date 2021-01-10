@@ -1,4 +1,4 @@
-package com.example.RankIT;
+package com.example.RankIT.demo.entities;
 
 
 import javax.persistence.Entity;
@@ -8,19 +8,19 @@ import javax.persistence.Id;
 
 @Entity
 public class Club {
-
+protected Club() {}
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO) //auto increment zarządzany przez bibliotekę
     private long id;
-    private final String name;
+    private String name;
     private String country;
-    private Integer punkty;
+    private Integer points;
 
-    public Club(long id, String name, String country, Integer punkty) {
+    public Club(long id, String name, String country, Integer points) {
         this.id = id;
         this.name = name;
         this.country = country;
-        this.punkty = punkty;
+        this.points = points;
     }
 
     public String getCountry() {
@@ -31,12 +31,12 @@ public class Club {
         this.country = country;
     }
 
-    public Integer getPunkty() {
-        return punkty;
+    public Integer getPoints() {
+        return points;
     }
 
-    public void setPunkty(Integer punkty) {
-        this.punkty = punkty;
+    public void setPoints(Integer punkty) {
+        this.points = punkty;
     }
 
     public long getId() {
@@ -57,7 +57,7 @@ public class Club {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +
-                ", punkty=" + punkty +
+                ", punkty=" + points +
                 '}';
     }
 }
