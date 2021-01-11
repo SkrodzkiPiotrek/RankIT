@@ -1,4 +1,4 @@
-package com.example.RankIT;
+package com.example.RankIT.demo.controllers;
 
 
 import com.example.RankIT.demo.entities.Club;
