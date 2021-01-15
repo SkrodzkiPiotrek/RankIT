@@ -25,4 +25,13 @@ public class ClubController {
     void addClub(@RequestBody Club club) {
         clubRepository.save(club);
     }
+
+    @PutMapping("/clubs")
+    void updateClub(@RequestBody Club club) {
+        clubRepository.save(club);
+    }
+    @DeleteMapping("/clubs")
+    void deleteClub(@RequestBody Club club) {
+        clubRepository.delete(club);
+    }
 }
