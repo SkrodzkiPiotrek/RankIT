@@ -1,0 +1,23 @@
+<<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Country</th>
+        <th scope="col">Points</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let club of clubs">
+        <td>{{ club.id }}</td>
+        <td>{{ club.name }}</td>
+        <td>{{ club.country }}</td>
+        <td>{{ club.points }}</td>
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
