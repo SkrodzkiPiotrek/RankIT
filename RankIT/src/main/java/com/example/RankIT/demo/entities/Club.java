@@ -13,7 +13,7 @@ import javax.persistence.Id;
 public class Club {
 protected Club() {}
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) //auto increment zarządzany przez bibliotekę
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment zarządzany przez bibliotekę
     private long id;
     private String name;
     private String country;
