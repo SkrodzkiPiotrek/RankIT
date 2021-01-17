@@ -1,0 +1,46 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Country</th>
+        <th scope="col">Points</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let club of clubs">
+        <td>{{ club.id }}</td>
+        <td>{{ club.name }}</td>
+        <td>{{ club.country }}</td>
+        <td>{{ club.points }}</td>
+
+      </tr>
+
+      <<div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card bg-dark my-5">
+              <div class="card-body">
+                <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+                <ul class="text-center list-inline py-3">
+                  <li class="list-inline-item">
+                    <a routerLink="/clubs" class="btn btn-info">List of Clubs</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a routerLink="/addclub" class="btn btn-info">Add CLub</a>
+                  </li><li class="list-inline-item">
+                  <a routerLink="/removeclub" class="btn btn-info">Remove CLub</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+      </tbody>
+    </table>
+  </div>
+</div>
