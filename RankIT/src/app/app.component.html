@@ -1,21 +1,113 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<<div class="container">
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Ranking piłkarski</title>
+  <meta name="description" content="Ranking piłkarski">
+  <meta name="keywords" content="ranking, piłka nożna">
+  <meta name="author" content="Karol Jaros">
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/main.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+<nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+
+  <a class="navbar-brand" href="#"><img src="assets/img/logo2.jpg" width="30" height="30" class="d-inline-block " alt=""> RankIT</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainmenu">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a routerLink="/clubs" class="nav-link" href="#"> Start </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Zawody </a>
+
+        <div class="dropdown-menu" aria-labelledby="submenu">
+
+          <a class="dropdown-item" href="#"> Terminarz zawodów </a>
+          <a class="dropdown-item" href="#"> Ranking Pucharu Świata </a>
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#"> Sylwetki zawodników </a>
+          <a class="dropdown-item" href="#"> Stadiony </a>
+
+        </div>
+
+
+
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Historia </a>
+
+        <div class="dropdown-menu" aria-labelledby="submenu">
+
+          <a class="dropdown-item" href="#"> 2020 </a>
+          <a class="dropdown-item" href="#"> 2019 </a>
+          <a class="dropdown-item" href="#"> 2018 </a>
+          <a class="dropdown-item" href="#"> 2017 </a>
+        </div>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a routerLink="/addclub" class="nav-link" href="#"> Dodaj Klub </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"> Wywiady </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#"> Kontakt </a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline">
+
+      <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+      <button class="btn btn-light" type="submit">Znajdź</button>
+
+    </form>
+
+  </div>
+
+</nav>
+<div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="card bg-dark my-5">
-        <div class="card-body">
-          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
-          <ul class="text-center list-inline py-3">
-            <li class="list-inline-item">
-              <a routerLink="/clubs" class="btn btn-info">List Clubs</a>
-            </li>
-            <li class="list-inline-item">
-              <a routerLink="/addclub" class="btn btn-info">Add CLub</a>
-            </li>
-          </ul>
-        </div>
+
+
+
       </div>
       <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+
+</html>

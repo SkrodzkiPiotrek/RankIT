@@ -4,11 +4,11 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {ClubService} from "../club.service";
 
 @Component({
-  selector: 'app-club-form',
-  templateUrl: './club-form.component.html',
-  styleUrls: ['./club-form.component.css']
+  selector: 'app-club-addform',
+  templateUrl: './club-addform.component.html',
+  styleUrls: ['./club-addform.component.css']
 })
-export class CLubFormComponent {
+export class ClubAddformComponent {
 
   club: Club;
 
