@@ -7,8 +7,11 @@ import {AppRoutingModule} from "../app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {ClubService} from "./club.service";
-import { AdminSiteComponent } from './admin-site/admin-site.component';
-import { UserDeleteComponent } from './user-delete/user-delete.component';
+
+import {ClubDeleteComponent} from './club-delete/club-delete.component';
+import { ContactComponent } from './contact/contact.component';
+import { CompetitonScheduleComponent } from './competiton-schedule/competiton-schedule.component';
+import { StadiumListComponent } from './stadium-list/stadium-list.component';
 
 
 @NgModule({
@@ -16,9 +19,11 @@ import { UserDeleteComponent } from './user-delete/user-delete.component';
     AppComponent,
     ClubListComponent,
     ClubAddformComponent,
-    AdminSiteComponent,
-    AdminSiteComponent,
-    UserDeleteComponent
+    ClubDeleteComponent,
+    ContactComponent,
+    CompetitonScheduleComponent,
+    StadiumListComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,4 +34,5 @@ import { UserDeleteComponent } from './user-delete/user-delete.component';
   providers: [ClubService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

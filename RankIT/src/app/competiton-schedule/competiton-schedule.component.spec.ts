@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserDeleteComponent } from './user-delete.component';
+import { CompetitonScheduleComponent } from './competiton-schedule.component';
 
-describe('UserDeleteComponent', () => {
-  let component: UserDeleteComponent;
-  let fixture: ComponentFixture<UserDeleteComponent>;
+describe('CompetitonScheduleComponent', () => {
+  let component: CompetitonScheduleComponent;
+  let fixture: ComponentFixture<CompetitonScheduleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserDeleteComponent ]
+      declarations: [ CompetitonScheduleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserDeleteComponent);
+    fixture = TestBed.createComponent(CompetitonScheduleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
