@@ -12,6 +12,7 @@ import {ClubDeleteComponent} from './club-delete/club-delete.component';
 import { ContactComponent } from './contact/contact.component';
 import { CompetitonScheduleComponent } from './competiton-schedule/competiton-schedule.component';
 import { StadiumListComponent } from './stadium-list/stadium-list.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { StadiumListComponent } from './stadium-list/stadium-list.component';
     ContactComponent,
     CompetitonScheduleComponent,
     StadiumListComponent,
+    MainComponent,
 
   ],
   imports: [

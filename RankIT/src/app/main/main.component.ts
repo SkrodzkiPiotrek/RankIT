@@ -3,21 +3,19 @@ import {Club} from "../club";
 import {ClubService} from "../club.service";
 
 @Component({
-  selector: 'app-club-list',
-  templateUrl: './club-list.component.html',
-  styleUrls: ['./club-list.component.css']
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
 })
-export class ClubListComponent implements OnInit {
+export class MainComponent implements OnInit {
 
   clubs: Club[];
-
-  constructor(private clubService: ClubService) {
-  }
+  constructor(private clubService: ClubService) { }
 
   ngOnInit() {
     this.clubService.findAll().subscribe(data => {
       this.clubs = data;
     });
   }
-}
 
+}

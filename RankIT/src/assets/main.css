@@ -1,7 +1,7 @@
 body
 {
-	background-color: #2F3336;
-	color: #efefef;
+	background-color: #868686;
+	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
 }
@@ -10,7 +10,7 @@ h1
 {
 	font-size: 36px;
 	font-weight: 400;
-	color: #C0D06F;
+	color: #c0d06f;
 	margin: 20px;
 }
 
@@ -21,7 +21,7 @@ h1
 
 .jumpers img
 {
-	width: 100%;
+	width: 90%;
 	height: auto;
 }
 
@@ -47,7 +47,10 @@ h1
 
 .bg-jumpers
 {
-	background-color: #91a33b !important;
+  background-image: url("assets/img/navbar.PNG");
+  background-size: cover;
+
+
 }
 
 .navbar-nav li:hover>.dropdown-menu
@@ -68,9 +71,8 @@ td, .th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #676565;
 }
-
 
 
 
