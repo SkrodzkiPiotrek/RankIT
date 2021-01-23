@@ -1,9 +1,13 @@
 body
 {
-	background-color: #868686;
+	background-color: #2F3336;
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
+}
+
+.navbar-nav li a {
+  color : #FFF !important;
 }
 
 h1
@@ -65,13 +69,14 @@ table {
 }
 
 td, .th {
-  border: 1px solid #dddddd;
+  border: 2px solid #1c1a1a;
   text-align: center;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #676565;
+  background-color: #838685;
+
 }
 
 
