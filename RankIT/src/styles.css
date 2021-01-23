@@ -10,7 +10,7 @@ h1
 {
   font-size: 36px;
   font-weight: 400;
-  color: #C0D06F;
+  color: #c0d06f;
   margin: 20px;
 }
 
@@ -40,8 +40,7 @@ h1
   display: block;
 }
 
-.navbar
-{
+.navbar {
   min-height: 57px;
 }
 
@@ -70,3 +69,4 @@ td, .th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+

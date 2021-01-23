@@ -4,6 +4,7 @@ package com.example.RankIT.demo.controllers;
 import com.example.RankIT.demo.entities.Club;
 import com.example.RankIT.demo.repositories.ClubRepository;
 import com.example.RankIT.demo.service.ServiceGenerator;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.http.HttpResponse;
@@ -22,7 +23,7 @@ public class ClubController {
 
     @GetMapping("/clubs")
     public List<Club> getClub() {
-        return (List<Club>) clubRepository.findAll();
+        return (List<Club>) clubRepository.findAll(Sort.by("points").descending());
 
     }
     @PostMapping("/clubs")

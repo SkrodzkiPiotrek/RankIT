@@ -23,6 +23,7 @@ public class RankItApplication implements CommandLineRunner {
     private ClubRepository clubRepository;
 
 
+
     @Override
     public void run(String... args) throws Exception {
     }
