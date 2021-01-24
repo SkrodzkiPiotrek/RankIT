@@ -56,8 +56,9 @@
              name="country"
              placeholder="Wpisz kraj"
              required #country="ngModel">
-      <div [hidden]="!country.pristine" class="alert alert-danger">Kraj jest wymagany</div>
     </div>
+      <div [hidden]="!country.pristine" class="alert alert-danger">Kraj jest wymagany</div>
+
     <button type="submit" [disabled]="!clubForm.form.valid"
             class="btn btn-info">Wyślij</button>
   </form>
